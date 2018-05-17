@@ -7,13 +7,11 @@ export class MessageService {
 
   constructor() { }
 
-  private messages :string[]=[];
-  public add(message:string):void
-  {
+  private messages: string[] = [];
+  public add(message: string): void {
     this.messages.push(message);
   }
-  public clear():void
-  {
-    this.messages=[];
+  public clear(): void {
+    this.messages = [];
   }
 }
