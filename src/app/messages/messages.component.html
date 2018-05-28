@@ -1,4 +1,5 @@
-<div *ngIf="messageService.messages.length">
+<div #messagesBox  [ngClass]="{'position-absolute': true}"  appDragable
+ *ngIf="messageService.messages.length">
   
     <h2>Messages</h2>
     <button class="clear"
